@@ -49,7 +49,7 @@ public class Message_2 extends AppCompatActivity {
     private int dad;
     private DatabaseReference db1,db2;
     final private String FCM_API = "https://fcm.googleapis.com/fcm/send";
-    final private String serverKey = "key=" + "AAAAbo21vCA:APA91bG0bpvsZAiLhEJPLq2MJPNGoKJhlCCkaIi9b_iKWxbI7f6p2Nz61vnEoYE4FrM2heomUoLa15T94y6p2YIVo7ts49fbr0uaverMa4_a8RH2NdoYxEZPbn4oS4R14QY_2iqolK7U";
+    final private String serverKey = "key=" + "Your id";
     final private String contentType = "application/json";
     final String TAG = "NOTIFICATION TAG";
 
