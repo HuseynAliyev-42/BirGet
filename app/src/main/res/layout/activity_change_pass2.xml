@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChangePass2">
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        app:labelVisibilityMode="labeled"
+        app:itemBackground="@color/colorPrimary"
+        app:itemIconTint="@drawable/drc"
+        app:itemTextColor="@drawable/drc"
+        app:menu="@menu/menu_2" />
+    <EditText
+        android:id="@+id/oldpass"
+        android:layout_centerHorizontal="true"
+        android:layout_width="275dp"
+        android:hint="Keçmiş şifrənizi yazın"
+        android:layout_marginTop="35dp"
+        android:layout_height="55dp"/>
+    <EditText
+        android:id="@+id/newpass"
+        android:layout_centerHorizontal="true"
+        android:hint="Yeni şifrə"
+        android:layout_below="@id/oldpass"
+        android:layout_width="275dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="35dp"/>
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="140dp"
+        android:layout_height="45dp"
+        android:text="Növbəti"
+        android:background="@drawable/yasil_button"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/newpass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"/>
+
+</RelativeLayout>

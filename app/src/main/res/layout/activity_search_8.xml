@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    tools:context=".Search_8">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RatingBar
+    android:id="@+id/rating"
+    android:layout_width="246dp"
+    android:layout_height="45dp"
+    android:layout_centerInParent="true"
+    android:layout_centerHorizontal="true"
+    android:numStars="5"/>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rating"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Axırıncı səyahətinizdəki sürücüyə bal ver!"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="21sp" />
+    <Button
+        android:id="@+id/bitir"
+        android:layout_below="@id/text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        android:layout_width="130dp"
+        android:layout_height="35dp"
+        android:text="Bitir"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:background="@drawable/ag_button"/>
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#54FF7B</color>
+    <color name="colorPrimaryDark">#54FF7B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="white">#fff</color>
+    <color name="dark_board">#BDC3C7</color>
+    <color name="text_color">#537346</color>
+    //55FF00
+    //54FF7B
+    //E42AC5
+</resources>

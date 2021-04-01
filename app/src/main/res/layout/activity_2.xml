@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity_2">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/signinButton"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-4810068176185955/4151663464">
+        </com.google.android.gms.ads.AdView>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:background="@drawable/carorg"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:text="Səyahətlərinizi daha rahat, əlverişli və ən önəmlisi daha əyləncəli edin."
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="21sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_centerHorizontal="true"
+        android:id="@+id/registerButton"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/yasil_button"
+        android:text="Qeydiyyatdan keç"
+        android:textColor="#fff" />
+    <Button
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ag_button"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/signinButton"
+        android:layout_below="@id/registerButton"
+        android:text="Daxil ol"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="250dp"
+        android:layout_height="40dp"/>
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">1Get</string>
+    <string name="admob_app_id">ca-app-pub-4810068176185955~9816420668</string>
+    <string name="admob_interstitial_id">
+        ca-app-pub-3940256099942544/1033173712</string>
+    <string name="Open">Open</string>
+    <string name="Close">Close</string>
+    <string name="dayanacaqlar">Dayanacaqlar</string>
+    <string name="beli_siqaret_cekilmesine_icaze_vermerem">Beli, siqaret cekilmesine icaze vermerem!</string>
+    <string name="danisqan_biriyem">Danisqan biriyem</string>
+    <string name="kdkd">kdkd</string>
+    <string name="kdjd">kdjd</string>
+    <string name="ddjdj">ddjdj</string>
+    <string name="dkdk">dkdk</string>
+    <string name="todo">TODO</string>
+    <string name="skdkd">sks</string>
+    <string name="title_activity_maps">Map</string>
+    <string name ="google_id">ca-app-pub-4810068176185955~8190980825</string>
+    <string name="unit_id">ca-app-pub-4810068176185955/4151663464</string>
+    <string name="api_key">AIzaSyBvW5-bJ3CWpobaQbi54_dpqR-nDEYsoRI</string>
+</resources>
+

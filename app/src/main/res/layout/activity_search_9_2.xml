@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".Search_9_2">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="340dp"
+        android:layout_height="340dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:src="@drawable/choose"/>
+    <TextView
+        android:id="@+id/text"
+        android:text="Əməlliyyat uğurla başa çatdı!Zəhmət olmasa, tez-tez mobil tətbiqə daxil olub rezervlərinizi nəzərdən keçirin!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="21sp"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/image"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"/>
+    <Button
+        android:id="@+id/submit"
+        android:text="Yeni Elan"
+        android:textColor="@color/colorPrimary"
+        android:background="@drawable/ag_button"
+        android:layout_below="@id/text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_width="230dp"
+        android:layout_height="45dp"/>
+    </RelativeLayout>
+</ScrollView>

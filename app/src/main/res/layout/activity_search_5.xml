@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".Search_5">
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginEnd="0dp"
+        app:labelVisibilityMode="labeled"
+        android:layout_marginStart="0dp"
+        app:itemBackground="@color/colorPrimary"
+        app:itemIconTint="@drawable/drc"
+        app:itemTextColor="@drawable/drc"
+        app:menu="@menu/menu1" />
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation2"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginEnd="0dp"
+        app:labelVisibilityMode="labeled"
+        android:layout_marginStart="0dp"
+        app:itemBackground="@color/colorPrimary"
+        app:itemIconTint="@drawable/drc"
+        app:itemTextColor="@drawable/drc"
+        app:menu="@menu/menu_2"
+        android:visibility="invisible"/>
+    <TextView
+        android:layout_below="@+id/navigation"
+        android:id="@+id/title"
+        android:textColor="#fff"
+        android:text="Səyahətin tarixini seçin"
+        android:textSize="32dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="68dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_marginTop="48dp"
+        android:layout_below="@id/title"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_calendar"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content">
+        <CalendarView
+            android:id="@+id/calendar"
+            android:layout_width="wrap_content"
+            android:layout_height="320dp">
+        </CalendarView>
+    </LinearLayout>
+    <Button
+        android:id="@+id/submit"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/line1"
+        android:background="@drawable/ag_button"
+        android:layout_width="180dp"
+        android:text="Növbəti"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorPrimary"
+        android:layout_height="50dp"/>
+
+</RelativeLayout>

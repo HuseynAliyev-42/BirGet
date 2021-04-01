@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:background="@drawable/condition"
+        android:id="@+id/image"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+    <TextView
+        android:layout_toRightOf="@id/image"
+        android:id="@+id/text"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAlignment="center"
+        android:text="BirGet mobil tətbiqinin yaranmasında məqsəd eyni yol gedəcək olan insanların bir-biri ilə əlaqəsini asanlaşdırmaqdır. Bu səbəb ilə səyahət zamanı yarana biləcək hər hansı bir insident və ya hadisədən BirGet tətbiqinin yaradıcıları heç bir məsuliyyət daşımır."
+        android:textColor="#000"
+        android:textSize="18dp"
+        android:textStyle="bold"/>
+
+</RelativeLayout>

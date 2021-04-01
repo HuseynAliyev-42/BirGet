@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    tools:context=".Request">
+    <RelativeLayout
+        android:id="@+id/rel1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:background="@color/colorPrimary"
+            app:itemBackground="@color/colorPrimary"
+            app:itemIconTint="@drawable/drc2"
+            app:itemTextColor="@drawable/drc2"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/menu_2" />
+        <LinearLayout
+            android:id="@+id/line1"
+            android:layout_below="@id/navigation"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="205dp"
+                android:layout_height="35dp"
+                android:id="@+id/line1_1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_marginLeft="55dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="İstəklər"
+                    android:textSize="21sp"
+                    android:textColor="@android:color/black"/>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:id="@+id/scalerequest"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="@color/colorPrimary" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="205dp"
+                android:layout_height="35dp"
+                android:id="@+id/line_1_2"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_marginLeft="55dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sərnişinlər"
+                    android:textSize="21sp"
+                    android:textColor="@android:color/black"/>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:id="@+id/scalecustomer"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="@color/colorPrimary" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/request"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/line1"
+            android:visibility="visible">
+
+            <ListView
+                android:id="@+id/list1"
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                android:layout_marginTop="5dp" />
+
+            <Button
+                android:id="@+id/add"
+                android:layout_width="195dp"
+                android:layout_height="35dp"
+                android:layout_below="@id/list1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/ag_button"
+                android:text="Sərnişin artır"
+                android:textColor="@color/colorPrimary" />
+
+            <Button
+                android:id="@+id/remove"
+                android:layout_width="195dp"
+                android:layout_height="35dp"
+                android:layout_below="@id/add"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/ag_button"
+                android:text="Elanı sil"
+                android:textColor="@color/colorPrimary" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/customer1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/line1"
+            android:visibility="invisible">
+
+            <ListView
+                android:id="@+id/customerlist"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/holder"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    tools:context=".Activity_3">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginStart="0dp"
+            app:labelVisibilityMode="labeled"
+            app:itemBackground="@color/colorPrimary"
+            app:itemIconTint="@drawable/drc"
+            app:itemTextColor="@drawable/drc"
+            app:menu="@menu/menu1" />
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_below="@id/navigation"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/vast"
+            android:layout_width="190dp"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:id="@+id/scalevast"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="7dp"
+                    android:background="@color/colorPrimary"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="2dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="21sp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/colorPrimary"
+                android:text="Ana səhifə"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/history"
+            android:layout_width="220dp"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:id="@+id/scalehistory"
+                    android:visibility="gone"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="7dp"
+                    android:background="@color/colorPrimary"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="2dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Tarix"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="21sp" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/request"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/line1"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:background="@drawable/carorg" />
+
+        <Button
+            android:id="@+id/axtar"
+            android:layout_width="195dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/image1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/yasil_button"
+            android:text="Axtar"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/qoy"
+            android:layout_width="195dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/axtar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/ag_button"
+            android:text="Elan Paylaş"
+            android:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/qoy"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="Hesabdan Çıx"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp" />
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-4810068176185955/4151663464">
+        </com.google.android.gms.ads.AdView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/line1"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:background="@drawable/carorg" />
+
+        <Button
+            android:id="@+id/put"
+            android:layout_width="195dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/image2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/yasil_button"
+            android:text="Paylaşdığın Elanlar"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/rezerv"
+            android:layout_width="195dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/put"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/ag_button"
+            android:text="Rezerv etdiyin elanlar"
+            android:textColor="@color/colorPrimary" />
+    </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

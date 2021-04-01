@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    android:layout_height="match_parent"
+    tools:context=".Error_1">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/image1"
+        android:src="@drawable/cancel"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="335dp"
+        android:layout_height="335dp"/>
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:layout_below="@id/image1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:text="Bu elan artıq mövcud deyil!"/>
+    <Button
+        android:id="@+id/btn1"
+        android:layout_marginTop="65dp"
+        android:layout_below="@id/text1"
+        android:layout_centerHorizontal="true"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:background="@drawable/ag_button"
+        android:text="Növbəti"
+        android:textColor="@color/colorPrimary"/>
+    </RelativeLayout>
+</ScrollView>

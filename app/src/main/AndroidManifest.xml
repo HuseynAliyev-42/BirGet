@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.birget.xdrjve">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/circlereallogo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/circlereallogo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".CustomerDetails"></activity>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyApb-1NiwL9Vqzmqgruw-0-Io_Z94Egdks" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-4810068176185955~8190980825" />
+
+        <activity android:name=".SignIn2" />
+        <activity android:name=".RequestCustomerDetails" />
+        <activity android:name=".ChangePass2" />
+        <activity android:name=".ChangeEmail2" />
+        <activity android:name=".ElanQoy" />
+        <activity android:name=".RezervElan" />
+        <activity android:name=".Search_9_2" />
+        <activity android:name=".Search_5_2" />
+        <activity android:name=".Qoy_8_10_2" />
+        <activity android:name=".Message_2_2" />
+        <activity android:name=".Add" />
+        <activity android:name=".Message_1_2" />
+        <activity android:name=".Succes" />
+        <activity android:name=".ChangeScore" />
+        <activity android:name=".ScoreShow" />
+        <activity android:name=".PhoneChange" />
+        <activity android:name=".ChangeEmail" />
+        <activity android:name=".ChangePass" />
+        <activity android:name=".Info_2" />
+        <activity android:name=".Error_1" />
+        <activity android:name=".Search_9" />
+        <activity android:name=".Search_8" />
+        <activity android:name=".Qoy_8_9_2" />
+        <activity android:name=".Qoy_8_8_2" />
+        <activity android:name=".Qoy_8_7_2" />
+        <activity android:name=".Qoy_8_6_2" />
+        <activity android:name=".Search_7" />
+        <activity android:name=".Search_6" />
+        <activity android:name=".Search_5" />
+        <activity android:name=".Search_4" />
+        <activity android:name=".Search_3" />
+        <activity android:name=".Search_2" />
+        <activity android:name=".Message_2" />
+        <activity android:name=".Request" />
+        <activity android:name=".History" />
+        <activity android:name=".Message_1" />
+        <activity android:name=".MyInfo" />
+        <activity android:name=".Qoy_8_5_2" />
+        <activity android:name=".Qoy_8_4_2" />
+        <activity android:name=".Qoy_8_3_2" />
+        <activity android:name=".Qoy_8_2_2" />
+        <activity android:name=".Customer" />
+        <activity android:name=".Qoy_9" />
+        <activity android:name=".Qoy_8" />
+        <activity android:name=".Qoy_7" />
+        <activity android:name=".Qoy_6" />
+        <activity android:name=".Qoy_5" />
+        <activity android:name=".Qoy_4" />
+        <activity android:name=".Qoy_3" />
+        <activity android:name=".Qoy_2" />
+        <activity android:name=".Activity_4" />
+        <activity android:name=".Qoy_1" />
+        <activity android:name=".Axtar_1" />
+        <activity android:name=".Info" />
+        <activity android:name=".Home" />
+        <activity android:name=".Activity_3" />
+        <activity android:name=".Signİn" />
+        <activity android:name=".Register" />
+        <activity android:name=".Activity_2" />
+    </application>
+
+</manifest>

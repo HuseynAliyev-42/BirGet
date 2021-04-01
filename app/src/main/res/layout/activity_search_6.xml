@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    tools:context=".Search_6">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:id="@+id/navigation"
+            android:background="@color/colorPrimary"
+            app:labelVisibilityMode="labeled"
+            android:layout_alignParentTop="true"
+            android:visibility="gone"
+            app:menu="@menu/menu1"
+            app:itemBackground="@color/colorPrimary"
+            app:itemIconTint="@drawable/drc"
+            app:itemTextColor="@drawable/drc"
+            />
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:id="@+id/navigation2"
+            android:background="@color/colorPrimary"
+            app:labelVisibilityMode="labeled"
+            android:layout_alignParentTop="true"
+            app:menu="@menu/menu_2"
+            app:itemBackground="@color/colorPrimary"
+            app:itemIconTint="@drawable/drc"
+            app:itemTextColor="@drawable/drc"
+            />
+
+    <ListView
+        android:layout_below="@id/navigation"
+        android:id="@+id/list1"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:visibility="visible" />
+    <Button
+        android:id="@+id/more"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/list1"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/yasil_button"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:text="Digər elanlara bax"
+        android:textColor="@android:color/white"/>
+    <Button
+        android:id="@+id/all"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/more"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/yasil_button"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:text="Bütün elanlar"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/condition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seçdiyiniz gün üçün hal-hazırda heç bir elan yoxdur. Aşağıda sizə uyğun olan elanlar göstərilib."
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="21sp"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Sizə uyğun başqa elanlar!"
+            android:textColor="@android:color/black"
+            android:textSize="21sp" />
+
+        <ListView
+            android:id="@+id/list2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/title" />
+
+    </RelativeLayout>
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/all"
+            android:layout_marginTop="55dp"
+            android:layout_centerHorizontal="true"
+            app:adSize="BANNER"
+            app:adUnitId="ca-app-pub-4810068176185955/4151663464"></com.google.android.gms.ads.AdView>
+
+        <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_below="@id/adView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-4810068176185955/4151663464">
+    </com.google.android.gms.ads.AdView>
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Qoy_6">     <com.google.android.material.bottomnavigation.BottomNavigationView
+    android:id="@+id/navigation"
+    android:layout_width="match_parent" app:labelVisibilityMode="labeled"
+    android:layout_height="45dp"
+    android:layout_marginEnd="0dp"
+    android:layout_marginStart="0dp"
+    app:itemBackground="@color/colorPrimary"
+    app:itemIconTint="@drawable/drc"
+    app:itemTextColor="@drawable/drc"
+    app:menu="@menu/menu1" />
+    <EditText
+        android:hint="Maşınınızın model qeyd edin" android:layout_below="@+id/navigation"
+        android:id="@+id/carBrand"
+        android:layout_marginTop="35dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="320dp"
+        android:layout_height="45dp"/>
+    <Button
+        android:id="@+id/submit"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/carBrand"
+        android:background="@drawable/yasil_button"
+        android:layout_width="180dp"
+        android:text="Növbəti"
+        android:layout_centerHorizontal="true"
+        android:textColor="#fff"
+        android:layout_height="50dp"/>
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/adView"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-4810068176185955/4151663464">
+    </com.google.android.gms.ads.AdView>
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-4810068176185955/4151663464">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    tools:context=".PhoneChange">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:id="@+id/navigation"
+    android:background="@color/colorPrimary"
+    app:labelVisibilityMode="labeled"
+    android:layout_alignParentTop="true"
+    android:visibility="gone"
+    app:menu="@menu/menu1"
+        app:itemBackground="@color/colorPrimary"
+        app:itemIconTint="@drawable/drc"
+        app:itemTextColor="@drawable/drc"
+    />
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:id="@+id/navigation2"
+        android:background="@color/colorPrimary"
+        app:labelVisibilityMode="labeled"
+        android:layout_alignParentTop="true"
+        app:menu="@menu/menu_2"
+        app:itemBackground="@color/colorPrimary"
+        app:itemIconTint="@drawable/drc"
+        app:itemTextColor="@drawable/drc"
+        />
+    <LinearLayout
+        android:layout_below ="@+id/navigation"
+        android:layout_marginTop="25dp"
+        android:id="@+id/line2"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <com.hbb20.CountryCodePicker
+            android:layout_marginTop="10dp"
+            android:id="@+id/ccp"
+            app:ccp_defaultNameCode="AZ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/phoneNumber"
+            android:layout_width="230dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:hint="Yeni Telefon Nömrəsi"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="215dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/line2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/yasil_button"
+        android:text="Növbəti"
+        android:textColor="@android:color/white" />
+    </RelativeLayout>
+</ScrollView>

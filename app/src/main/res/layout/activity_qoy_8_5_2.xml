@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Qoy_8_5_2">     <com.google.android.material.bottomnavigation.BottomNavigationView
+    android:id="@+id/navigation"
+    android:layout_width="match_parent" app:labelVisibilityMode="labeled"
+    android:layout_height="45dp"
+    android:layout_marginEnd="0dp"
+    android:layout_marginStart="0dp"
+    app:itemBackground="@color/colorPrimary"
+    app:itemIconTint="@drawable/drc"
+    app:itemTextColor="@drawable/drc"
+    app:menu="@menu/menu1" />
+    <RelativeLayout
+        android:layout_below = "@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Spinner
+            android:id="@+id/number"
+            android:layout_marginTop="35dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="320dp"
+            android:layout_height="45dp"/>
+        <EditText
+            android:id="@+id/place1"
+            android:layout_below="@id/number"
+            android:visibility="invisible"
+            android:hint="1-ci dayanacaqı seçin"
+            android:layout_marginTop="35dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="320dp"
+            android:layout_height="45dp"/>
+        <EditText
+            android:id="@+id/place2"
+            android:layout_below="@id/place1"
+            android:visibility="invisible"
+            android:hint="2-ci dayanacaqı seçin"
+            android:layout_marginTop="35dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="320dp"
+            android:layout_height="45dp"/>
+        <EditText
+            android:id="@+id/place3"
+            android:layout_below="@id/place2"
+            android:visibility="invisible"
+            android:hint="3-ci dayanacaqı seçin"
+            android:layout_marginTop="35dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="320dp"
+            android:layout_height="45dp"/>
+        <EditText
+            android:id="@+id/place4"
+            android:layout_below="@id/place3"
+            android:visibility="invisible"
+            android:hint="4-ci dayanacaqı seçin"
+            android:layout_marginTop="35dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="320dp"
+            android:layout_height="45dp"/>
+        <EditText
+            android:id="@+id/place5"
+            android:layout_below="@id/place4"
+            android:visibility="invisible"
+            android:hint="5-ci dayanacaqı seçin"
+            android:layout_marginTop="35dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="320dp"
+            android:layout_height="45dp"/>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/place5"
+            android:background="@drawable/yasil_button"
+            android:layout_width="180dp"
+            android:text="Növbəti"
+            android:layout_centerHorizontal="true"
+            android:textColor="#fff"
+            android:layout_height="50dp"/>
+    </RelativeLayout>
+</LinearLayout>
