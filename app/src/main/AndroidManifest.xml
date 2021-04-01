@@ -32,13 +32,13 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyApb-1NiwL9Vqzmqgruw-0-Io_Z94Egdks" />
+            android:value="Your Api Key" />
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-4810068176185955~8190980825" />
+            android:value="Your google admov app id" />
 
         <activity android:name=".SignIn2" />
         <activity android:name=".RequestCustomerDetails" />
