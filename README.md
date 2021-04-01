@@ -11,5 +11,6 @@ It is a car-sharing app system. It was developed in Android Studio and Java. I c
   9. Settings.
   10. Customer admin.
   11. Finder admin.
+
 There is plenty of algorithms and data structures that we used in this program. For example, we use an array, linked list and heap. We also use a variety of algorithms, such as greedy algorithms, sort algorithms, search algorithms and Dijkstra's shortest path algorithms. You can use all of these codes in any project. If you want to build a car-sharing app, you can use this code.  Good luck!
 Sincerely, Huseyn Aliyev.
