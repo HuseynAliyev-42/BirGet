@@ -15,8 +15,8 @@
     <string name="todo">TODO</string>
     <string name="skdkd">sks</string>
     <string name="title_activity_maps">Map</string>
-    <string name ="google_id">ca-app-pub-4810068176185955~8190980825</string>
-    <string name="unit_id">ca-app-pub-4810068176185955/4151663464</string>
-    <string name="api_key">AIzaSyBvW5-bJ3CWpobaQbi54_dpqR-nDEYsoRI</string>
+    <string name ="google_id">Your ad key</string>
+    <string name="unit_id">Your ad key</string>
+    <string name="api_key">Your ad key</string>
 </resources>
 
